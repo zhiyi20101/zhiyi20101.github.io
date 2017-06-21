@@ -20,7 +20,7 @@
 　　
   由于某些原因，比如我们应用代码上处理不够好，又或者用户手机后台打开了很多应用，又在听歌又在下载视频什么的，CPU一时间被占用了，导致下一帧绘制的时间超过了16ms，那么问题就来了，这时候用户就不爽了，因为用户很明显感知到了卡顿的出现。
 ## 卡顿产生的原因
-  
+  ![Image text](http://upload-images.jianshu.io/upload_images/661427-79517e484fee2f7e.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
   Step1. 当Display显示第0帧数据，此时CPU和GPU已经开始渲染第1帧画面，并将数据缓存在缓冲B中；
 
   Step2. 但是由于某些原因，就好像上面说的，CPU资源一时间被占用，导致系统处理该帧数据耗时过长或者未能及时处理该帧数据；
